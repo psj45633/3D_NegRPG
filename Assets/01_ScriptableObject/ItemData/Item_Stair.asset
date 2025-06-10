@@ -14,7 +14,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   displayName: Stair
   description: MP potion
-  type: 2
+  type: 1
   icon: {fileID: 21300000, guid: bdd5b9613696d1b41a653b52ba55f8c3, type: 3}
   dropPrefab: {fileID: 423109343531913912, guid: 10fec5f134f2ed04e8739bbf6a4300d7,
     type: 3}

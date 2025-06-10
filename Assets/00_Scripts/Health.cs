@@ -7,8 +7,8 @@ public class Health : MonoBehaviour
 {
     [SerializeField] private int maxHealth = 100;
     [SerializeField] private int maxMana = 100;
-    private int health;
-    private int mana;
+    public int health;
+    public int mana;
     public event Action OnDie;
 
     public bool isDie = false;
@@ -33,11 +33,11 @@ public class Health : MonoBehaviour
         print(health);
     }
 
-    public void RestoreStatValue(int value)
-    {
-        if (health >= maxHealth)
-        {
 
-        }
+    public void RestoreStatValue(int condition,int value)
+    {
+        if (condition >= 100) return;
+
+        condition = Mathf.Min(condition + value, 100);
     }
 }
